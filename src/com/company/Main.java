@@ -5,15 +5,15 @@ import java.util.*;
 
 class Main {
 
-    public static void main(String[] args) //main function actual starts here
+    public static void main(String[] args) //main function actual program starts here
     {
         //function path sortArray --> max --> countSort --> printSortedArray
 
-        int[] arrayToSort ={1700,78,21,190,1802,24,200,6600,800,9000};
+        int[] arrayToSort ={10,20,30, 200, 100, 24, 666, 6600, 800, 9111};
 
         int length=arrayToSort.length; //sets the length variable to the length of arrayToSort
 
-        sortArray(arrayToSort,length); //calls sortmain
+        organizeArray(arrayToSort,length); //calls sortmain
 
         printSortedArray(arrayToSort,length);//calls printSortedArray method
     }
@@ -53,7 +53,7 @@ class Main {
             queue[i]=sortedarray[i];
     }
 
-    static void sortArray(int array[],int length) // this method is the main function
+    static void organizeArray(int array[],int length) // this method is the main function
     {
         int max = max(array, length); //calling find max method with array and length as inputs from main function
         for (int k=1;max/k >0;k*=10) //calls count sort with k starting at 1 going till max/k is greater than 0
@@ -63,13 +63,15 @@ class Main {
 
     static void printSortedArray(int array[],int length) //function that prints the sorted array
     {
-        for (int i=0;i<length;i++) //i starts at 0, goes till i is < length of array
-            if(length==i) {
+        for (int i=0;i<10;i++) //i starts at 0, goes till i is < length of array
+
+            if(i==length) {
                 System.out.print(array[i]);
             }
             else {
                 System.out.print(array[i] + ",");
             }
+
     }
 
 
