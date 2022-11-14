@@ -1,5 +1,7 @@
 package com.company;
-import java.util.*;
+//HW4 Bonus - Created by Ryan Kuczer - 11/14/22
+//To run code the package above may have to be deleted, this is from the fact that I wrote the code in the intellij IDE and was the command line prompt selected.
+import java.util.*; //import java utilities
 
 class Main {
 
@@ -7,12 +9,15 @@ class Main {
     {
         //function path sortArray --> max --> countSort --> printSortedArray
 
-        int[] arrayToSort ={9111,20,30,200,100,24,666,6600,800,10}; //
+        int[] arrayToSort ={9111,20,30,200,100,62,666,6600,800,10}; //pre made array with values
+
+        System.out.println("Array to sort is: " + Arrays.toString(arrayToSort));
 
         int length=arrayToSort.length; //sets the length variable to the length of arrayToSort
 
         organizeArray(arrayToSort,length); //calls sortmain with the arraytoSort premade array with corresponding length
 
+        System.out.println("Sorted array is below.");
         printSortedArray(arrayToSort,length);//calls printSortedArray method
     }
 
